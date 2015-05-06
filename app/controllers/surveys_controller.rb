@@ -15,7 +15,7 @@ class SurveysController < ApplicationController
 
     puts 'wwwwwwwww'
 
-    account_sid = 'AC2912eb81e771b6eca253b4801cf7cae1' #PNc13a00a4a60589ab8136c5561e4a6e3b
+    account_sid = 'PNc13a00a4a60589ab8136c5561e4a6e3b'
     auth_token = ENV['TWILIO_AUTH_TOKEN']
     @client = Twilio::REST::Client.new account_sid, auth_token
  
