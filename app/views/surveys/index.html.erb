@@ -21,15 +21,3 @@
   <% end %>
   <% end %>
 </ul>
-
-<h3>All responses</h3>
-
-<ul >
-	<% if !@surveyResponses.nil? %>
-  <% @surveyResponses.each do |surveyResponse| %>
-    <li>
-      <%= link_to surveyResponse %>
-    </li>
-  <% end %>
-  <% end %>
-</ul>
