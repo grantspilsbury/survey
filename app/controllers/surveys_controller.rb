@@ -20,7 +20,7 @@ class SurveysController < ApplicationController
     @client = Twilio::REST::Client.new account_sid, auth_token
  
     puts 'xxxxxxxxx'
-    puts @client.account.recordings.count
+    # puts @client.account.recordings.count
     # Loop over recordings and print out a property for each one
     @client.account.recordings.list.each do |recording|
       puts recording.duration
