@@ -76,7 +76,7 @@ class SurveysController < ApplicationController
         if @next_question[:recording] == false
           r.Gather :numDigits => '1', :action => '/api/get_answer', :method => 'get' do |g|
             g.Say @next_question[:body], voice: 'alice', language: 'en-GB'
-            g.Say '0 is the lowest. 9 is the highest.', voice: 'man', language: 'en-US'
+            g.Say '0 is the lowest. 8 is the highest.', voice: 'man', language: 'en-US'
           end
 
         # If it's a free-form question record the user
