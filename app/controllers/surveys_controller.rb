@@ -13,11 +13,11 @@ class SurveysController < ApplicationController
     @surveyAnswers = SurveyAnswer.all
     @surveyResponse = SurveyResponse.all
 
-    # puts 'wwwwwwwww'
+    puts 'wwwwwwwww'
 
-    # account_sid = 'PNc13a00a4a60589ab8136c5561e4a6e3b'
-    # auth_token = ENV['TWILIO_AUTH_TOKEN']
-    # puts 'ttttttttttt'
+    account_sid = 'PNc13a00a4a60589ab8136c5561e4a6e3b'
+    auth_token = ENV['TWILIO_AUTH_TOKEN']
+    puts 'ttttttttttt'
     # @client = Twilio::REST::Client.new account_sid, auth_token
  
     # puts 'xxxxxxxxx'
