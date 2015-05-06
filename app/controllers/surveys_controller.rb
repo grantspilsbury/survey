@@ -17,11 +17,13 @@ class SurveysController < ApplicationController
     auth_token = ENV['TWILIO_AUTH_TOKEN']
     @client = Twilio::REST::Client.new account_sid, auth_token
  
- 
+    puts 'xxxxxxxxx'
+    puts @client.account.recordings.count
     # Loop over recordings and print out a property for each one
     @client.account.recordings.list.each do |recording|
       puts recording.duration
     end
+    puts 'yyyyyyyyyyyyy'
 
   end
 
