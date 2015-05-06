@@ -10,6 +10,12 @@ class SurveysController < ApplicationController
   # GET /surveys.json
   def index
     @surveys = Survey.all
+    @surveyAnswers = SurveyAnswer.all
+    @surveyResponse = SurveyResponse.all
+  end
+
+  def new
+    @survey = Survey.new
   end
   
   # GET /api/get_answer

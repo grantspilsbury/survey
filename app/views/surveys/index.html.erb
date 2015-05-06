@@ -1,1 +1,35 @@
 <h1>Call 087 550 8736 To take a survey.</h1>
+
+<h3>All surveys</h3>
+
+<ul >
+  <% @surveys.each do |survey| %>
+    <li>
+      <%= link_to survey %>
+    </li>
+  <% end %>
+</ul>
+
+<h3>All answers</h3>
+
+<ul >
+	<% if !@surveyAnswers.nil? %>
+  <% @surveyAnswers.each do |surveyAnswer| %>
+    <li>
+      <%= link_to surveyAnswer %>
+    </li>
+  <% end %>
+  <% end %>
+</ul>
+
+<h3>All responses</h3>
+
+<ul >
+	<% if !@surveyResponses.nil? %>
+  <% @surveyResponses.each do |surveyResponse| %>
+    <li>
+      <%= link_to surveyResponse %>
+    </li>
+  <% end %>
+  <% end %>
+</ul>
