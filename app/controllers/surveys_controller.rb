@@ -13,21 +13,21 @@ class SurveysController < ApplicationController
     @surveyAnswers = SurveyAnswer.all
     @surveyResponse = SurveyResponse.all
 
-    puts 'wwwwwwwww'
+    # puts 'wwwwwwwww'
 
-    account_sid = 'PNc13a00a4a60589ab8136c5561e4a6e3b'
-    auth_token = ENV['TWILIO_AUTH_TOKEN']
-    puts 'ttttttttttt'
-    @client = Twilio::REST::Client.new account_sid, auth_token
+    # account_sid = 'PNc13a00a4a60589ab8136c5561e4a6e3b'
+    # auth_token = ENV['TWILIO_AUTH_TOKEN']
+    # puts 'ttttttttttt'
+    # @client = Twilio::REST::Client.new account_sid, auth_token
  
-    puts 'xxxxxxxxx'
-    # puts @client.account.recordings.count
-    # Loop over recordings and print out a property for each one
-    @client.account.recordings.list.each do |recording|
-      puts 'ggggggggggggg'
-      puts recording.duration
-    end
-    puts 'yyyyyyyyyyyyy'
+    # puts 'xxxxxxxxx'
+    # # puts @client.account.recordings.count
+    # # Loop over recordings and print out a property for each one
+    # @client.account.recordings.list.each do |recording|
+    #   puts 'ggggggggggggg'
+    #   puts recording.duration
+    # end
+    # puts 'yyyyyyyyyyyyy'
 
   end
 
